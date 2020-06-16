@@ -1,0 +1,5 @@
+version: '3'
+services:
+  mini-connect:
+    build: .
+    image: jumpingrivers/mini-connect
