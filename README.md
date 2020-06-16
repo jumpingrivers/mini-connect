@@ -6,7 +6,7 @@ The main purpose is to encrypt config variables until RStudio provide a mechanis
 
 ## Usage
 
-```
+```shell
 docker run --rm -i \
   -v /etc/rstudio-connect:/etc/rstudio-connect:ro \
   -v /var/lib/rstudio-connect:/var/lib/rstudio-connect:ro \
@@ -14,7 +14,7 @@ docker run --rm -i \
   /opt/rstudio-connect/bin/rscadmin configure --encrypt-config-value
 ```
 
-```
+```shell
 echo "VALUE_TO_ENCRYPT" | ./encrypt-config-value.sh
 ```
 
