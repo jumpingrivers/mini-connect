@@ -8,8 +8,7 @@ The main purpose is to encrypt config variables until RStudio provide a mechanis
 
 ```
 docker run --rm -i \
-  -v /etc/rstudio-connect:/etc/rstudio-connect:ro \
-  -v /var/lib/rstudio-connect:/var/lib/rstudio-connect:ro \
+  -v /var/lib/rstudio-connect/db/secret.key:/var/lib/rstudio-connect/db/secret.key:ro \
   jumpingrivers/mini-connect \
   /opt/rstudio-connect/bin/rscadmin configure --encrypt-config-value
 ```
