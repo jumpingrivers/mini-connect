@@ -1,0 +1,5 @@
+include: 
+  - project: 'jumpingrivers/tools/ci-templates'
+    ref: master
+    file: '/templates/dockerfile.yml'
+
